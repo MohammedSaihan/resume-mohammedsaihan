@@ -1,0 +1,461 @@
+/* ----------------------
+   GLOBAL
+----------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #1f2933;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* ----------------------
+   LAYOUT
+----------------------- */
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 42px 48px;
+    border-radius: 8px;
+}
+
+/* ----------------------
+   HEADER
+----------------------- */
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.subtitle {
+    font-size: 1.05rem;
+    color: #4b5563;
+}
+
+.contact {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
+/* ----------------------
+   SECTIONS
+----------------------- */
+
+section {
+    margin-bottom: 32px;
+}
+
+h2 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    color: #111827;
+}
+
+p {
+    margin: 0;
+}
+
+/* ----------------------
+   SKILLS
+----------------------- */
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.skills li {
+    list-style: none;
+    font-size: 0.85rem;
+    padding: 6px 12px;
+    background-color: #f1f5f9;
+    border-radius: 4px;
+    color: #1f2933;
+}
+
+/* ----------------------
+   PROJECTS
+----------------------- */
+
+.project {
+    margin-bottom: 18px;
+}
+
+.project h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.project p {
+    font-size: 0.95rem;
+    color: #374151;
+}
+
+.tech {
+    font-size: 0.85rem;
+    color: #6b7280;
+    margin-top: 4px;
+}
+
+/* ----------------------
+   FOOTER
+----------------------- */
+
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #9ca3af;
+    margin-top: 40px;
+}
+
+/* ----------------------
+   PRINT / PDF MODE
+----------------------- */
+
+@media print {
+    body {
+        background: none;
+    }
+
+    .container {
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+/* ----------------------
+   DOWNLOAD BUTTON
+----------------------- */
+
+.download-wrapper {
+    text-align: center;
+    margin-top: 18px;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #2563eb; /* professional blue */
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.download-btn:hover {
+    background-color: #1e40af;
+    transform: translateY(-1px);
+}
+
+.download-btn:active {
+    transform: translateY(0);
+}
+
+/* ----------------------
+   PRINT / PDF MODE
+----------------------- */
+
+@media print {
+    .download-wrapper {
+        display: none;
+    }
+}
+/* ==========================
+   RESET & GLOBAL
+========================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #1f2933;
+    line-height: 1.6;
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 14px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #111827;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #374151;
+}
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+/* ==========================
+   LAYOUT CONTAINER
+========================== */
+
+.container {
+    max-width: 900px;
+    margin: 48px auto;
+    background-color: #ffffff;
+    padding: 44px 48px;
+    border-radius: 8px;
+}
+
+/* ==========================
+   HERO / LANDING
+========================== */
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.cta {
+    margin-top: 24px;
+    display: flex;
+    gap: 14px;
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.download-btn {
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 10px 18px;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.download-btn:hover {
+    background-color: #1e40af;
+}
+
+.outline-btn {
+    border: 1px solid #2563eb;
+    color: #2563eb;
+    padding: 10px 18px;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.outline-btn:hover {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+/* ==========================
+   SECTIONS
+========================== */
+
+section {
+    margin-bottom: 36px;
+}
+
+h2 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 6px;
+    margin-bottom: 18px;
+}
+
+/* ==========================
+   PROJECTS
+========================== */
+
+.project {
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+
+.tech {
+    font-size: 0.85rem;
+    color: #6b7280;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #9ca3af;
+    margin: 40px 0;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .nav-links {
+        gap: 14px;
+    }
+
+    .container {
+        margin: 24px;
+        padding: 28px;
+    }
+
+    .cta {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* ==========================
+   PRINT / PDF
+========================== */
+
+@media print {
+    body {
+        background: none;
+    }
+
+    .navbar,
+    footer,
+    .cta {
+        display: none;
+    }
+
+    .container {
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+    }
+}
+/* ----------------------
+   PROJECT EXTRAS
+----------------------- */
+
+.architecture {
+    font-size: 0.85rem;
+    color: #374151;
+    background-color: #f8fafc;
+    padding: 8px 12px;
+    border-left: 3px solid #2563eb;
+    margin: 10px 0;
+}
+
+.project-links {
+    margin-top: 8px;
+    font-size: 0.85rem;
+}
+
+.project-links a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.project-links a:hover {
+    text-decoration: underline;
+}
+h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #111827;
+}
+p {
+    font-size: 0.95rem;
+    color: #374151;
+    margin-bottom: 6px;
+}
+/* ----------------------
+   CONTACT PAGE
+----------------------- */
+
+.contact-list p {
+    margin: 12px 0;
+    font-size: 0.95rem;
+}
+
+.contact-list a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.contact-list a:hover {
+    text-decoration: underline;
+}
+.contact-list .label {
+    font-weight: 600;
+    color: #111827;
+}

@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="project">
+    <h3>Feka 2.0 — Fake News Detection Platform</h3>
+
+    <p>
+        AI-powered web application to classify news articles as real or fake
+        using NLP and transformer-based models, with real-time trusted-source
+        verification.
+    </p>
+
+    <p class="architecture">
+        <strong>Architecture:</strong> User input → NLP preprocessing →
+        Transformer-based classifier → source verification →
+        confidence scoring → Flask API response
+    </p>
+
+    <ul>
+        <li>Achieved <strong>~88–92% accuracy</strong> on curated news datasets</li>
+        <li>Reduced false positives by <strong>~25%</strong> using source matching</li>
+        <li>Handled <strong>100+ requests/day</strong> with IP-based rate limiting</li>
+        <li>Optimized deployment for <strong>&lt;512 MB memory</strong></li>
+    </ul>
+
+    <p class="tech">
+        Python, Flask, Transformers, Scikit-learn, SerpAPI
+    </p>
+
+    <p class="project-links">
+        🔗 <a href="https://github.com/yourusername/feka-fake-news-detection" target="_blank">
+            GitHub Repository
+        </a>
+    </p>
+</div>
+
+<div class="project">
+    <h3>Invoice Cross-Checking ML System</h3>
+
+    <p>
+        Automated system to extract, normalize, and cross-validate invoice data
+        using OCR and NLP, reducing manual verification effort.
+    </p>
+
+    <p class="architecture">
+        <strong>Architecture:</strong> Invoice upload → OCR text extraction →
+        NLP entity parsing → schema validation →
+        mismatch detection → structured output
+    </p>
+
+    <ul>
+        <li>Extracted invoice fields with <strong>~90% accuracy</strong></li>
+        <li>Reduced manual review time by <strong>~60%</strong></li>
+        <li>Supported <strong>PDF and scanned image</strong> invoices</li>
+    </ul>
+
+    <p class="tech">
+        Python, OCR, NLP, Pandas
+    </p>
+
+    <p class="project-links">
+        🔗 <a href="https://github.com/yourusername/invoice-cross-check-ml" target="_blank">
+            GitHub Repository
+        </a>
+    </p>
+</div>
+
+
+{% endblock %}

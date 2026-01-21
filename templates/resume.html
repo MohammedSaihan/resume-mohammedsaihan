@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Resume</h2>
+
+<div class="container">
+
+
+    <header>
+        <h1>Your Name</h1>
+        <p class="subtitle">Data Analyst | SQL • Excel • Power BI • Python</p>
+
+        <p class="contact">
+            📧 your@email.com &nbsp;|&nbsp;
+            🌐 github.com/yourname &nbsp;|&nbsp;
+            📍 Saudi Arabia (Open to Jeddah & Riyadh)
+        </p>
+
+        <div class="download-wrapper">
+            <a href="{{ url_for('static', filename='resume_latest.pdf') }}" class="download-btn" download>
+                Download Resume
+            </a>
+            <p class="resume-version">Resume v1.1 • Updated Feb 2026</p>
+        </div>
+    </header>
+
+    <section>
+        <h2>Professional Summary</h2>
+        <p>
+            Data Analyst with hands-on experience in data cleaning, analysis, and interactive dashboard development.
+            Skilled in SQL, Excel, Power BI, and Python to transform raw data into meaningful business insights.
+            Experienced in working with real-world datasets, building KPI dashboards, and supporting data-driven
+            decision-making.
+        </p>
+    </section>
+
+    <section>
+        <h2>Core Skills</h2>
+        <ul class="skills">
+            <li>Data Analysis</li>
+            <li>SQL</li>
+            <li>Excel</li>
+            <li>BI Tools</li>
+            <li>Scikit-learn</li>
+            <li>Pandas & NumPy</li>
+            <li>Programming</li>
+            <li>Git & GitHub</li>
+            <li>Web & Tools</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Selected Projects</h2>
+
+        <div class="project">
+            <h3>Feka 2.0 — Fake News Detection Platform</h3>
+            <p>
+                Built an AI-powered web application that detects fake news using NLP
+                and transformer-based models, with real-time trusted-source
+                verification.
+            </p>
+            <p class="tech">
+                Python, Flask, Transformers, Scikit-learn, SerpAPI
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Invoice Cross-Checking ML System</h3>
+            <p>
+                Designed a machine learning pipeline to extract, normalize, and
+                cross-validate invoice data using OCR and NLP techniques.
+            </p>
+            <p class="tech">
+                Python, OCR, NLP, Pandas
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <h2>PROFESSIONAL TRAINING</h2>
+        <p>
+            Data Analytics & Data Science – Professional Online Programs
+            (SQL, Excel, Power BI, Python, Business Analytics)
+        </p>
+    </section>
+
+    <section>
+        <h2>What I Bring</h2>
+        <ul>
+            <li>Strong ability to learn and apply new technologies quickly</li>
+            <li>Project-first mindset with real-world deployment experience</li>
+            <li>Comfortable working with both ML models and backend systems</li>
+            <li>Clear communication and structured problem-solving</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2026 Your Name</p>
+    </footer>
+    {% endblock %}
