@@ -7,12 +7,11 @@
 }
 
 body {
-    font-family: "Segoe UI", Roboto, Arial, sans-serif;
-    background-color: #f4f6f8;
-    color: #1f2933;
     margin: 0;
-    padding: 0;
-    line-height: 1.6;
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    background-color: #0f172a; /* dark slate */
+    color: #e5e7eb;
+    line-height: 1.7;
 }
 
 /* ----------------------
@@ -22,36 +21,68 @@ body {
 .container {
     max-width: 900px;
     margin: 40px auto;
-    background-color: #ffffff;
-    padding: 42px 48px;
-    border-radius: 8px;
+    background-color: #020617; /* near-black */
+    padding: 40px 44px;
+    border-radius: 6px;
+    border: 1px solid #1e293b;
 }
+
+.navbar {
+    background-color: #020617;
+    border-bottom: 1px solid #1e293b;
+}
+
+.logo {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.95rem;
+    color: #38bdf8; /* cyan accent */
+    text-decoration: none;
+}
+
+.nav-links a {
+    font-size: 0.85rem;
+    color: #cbd5f5;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
 
 /* ----------------------
    HEADER
 ----------------------- */
 
-header {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-header h1 {
-    font-size: 2.2rem;
+h1 {
+    font-size: 1.8rem;
     font-weight: 600;
-    margin-bottom: 6px;
+    margin-bottom: 14px;
 }
 
-.subtitle {
-    font-size: 1.05rem;
-    color: #4b5563;
+h2 {
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #94a3b8;
+    border-bottom: 1px dashed #1e293b;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
 }
 
-.contact {
-    margin-top: 8px;
-    font-size: 0.9rem;
-    color: #6b7280;
+h3 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #e5e7eb;
 }
+
+p {
+    font-size: 0.95rem;
+    color: #cbd5f5;
+}
+
+
+
 
 /* ----------------------
    SECTIONS
@@ -80,21 +111,15 @@ p {
    SKILLS
 ----------------------- */
 
-.skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 0;
-    margin: 0;
-}
-
 .skills li {
     list-style: none;
-    font-size: 0.85rem;
-    padding: 6px 12px;
-    background-color: #f1f5f9;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.75rem;
+    padding: 6px 10px;
+    border: 1px solid #1e293b;
     border-radius: 4px;
-    color: #1f2933;
+    background-color: #020617;
+    color: #38bdf8;
 }
 
 /* ----------------------
@@ -102,36 +127,40 @@ p {
 ----------------------- */
 
 .project {
-    margin-bottom: 18px;
-}
-
-.project h3 {
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 4px;
-}
-
-.project p {
-    font-size: 0.95rem;
-    color: #374151;
+    padding: 16px;
+    border: 1px solid #1e293b;
+    border-radius: 6px;
+    margin-bottom: 20px;
 }
 
 .tech {
-    font-size: 0.85rem;
-    color: #6b7280;
-    margin-top: 4px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.75rem;
+    color: #94a3b8;
 }
+
+.architecture {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.75rem;
+    background-color: #020617;
+    border-left: 3px solid #38bdf8;
+    padding: 10px 12px;
+    margin: 12px 0;
+    color: #cbd5f5;
+}
+
 
 /* ----------------------
    FOOTER
 ----------------------- */
 
 footer {
+    font-size: 0.7rem;
+    color: #64748b;
     text-align: center;
-    font-size: 0.8rem;
-    color: #9ca3af;
-    margin-top: 40px;
+    margin: 40px 0;
 }
+
 
 /* ----------------------
    PRINT / PDF MODE
@@ -182,6 +211,7 @@ footer {
 .download-btn:active {
     transform: translateY(0);
 }
+
 
 /* ----------------------
    PRINT / PDF MODE
