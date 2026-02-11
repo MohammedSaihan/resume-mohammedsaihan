@@ -1,107 +1,162 @@
 {% extends "base.html" %}
+
 {% block content %}
-<h2>Resume</h2>
 
-<div class="container">
+<div class="container resume-container">
 
-
-    <header>
-        <h1>Mohammed Saihan</h1>
-        <p class="subtitle">Data Analyst | SQL • Excel • Power BI • Python</p>
-
-        <p class="contact">
-            📧 developer@mohammedsaihan.com &nbsp;|&nbsp;
-            🌐 github.com/MohammedSaihan &nbsp;|&nbsp;
-            📍 Saudi Arabia (Open to Jeddah & Riyadh)
+    <!-- HEADER -->
+    <section class="resume-header">
+        <h1>MOHAMMED SAIHAN</h1>
+        <p class="resume-title">
+            Data Analyst | SQL • Excel • Power BI • Python
         </p>
 
-        <div class="download-wrapper">
-            <a href="{{ url_for('static', filename='myresume.pdf') }}" class="download-btn" download>
-                Download Resume
-            </a>
-            <p class="resume-version">Resume v1.1 • Updated Feb 2026</p>
+        <div class="contact-info">
+            <p>📧 developer@mohammedsaihan.com</p>
+            <p>🌐 github.com/MohammedSaihan</p>
+            <p>📍 Saudi Arabia (Open to Jeddah & Riyadh)</p>
         </div>
-    </header>
-
-    <section>
-        <h2>Professional Summary</h2>
-        <p>
-            Data Analyst with hands-on experience in data cleaning, analysis, and interactive dashboard development.
-            Skilled in SQL, Excel, Power BI, and Python to transform raw data into meaningful business insights.
-            Experienced in working with real-world datasets, building KPI dashboards, and supporting data-driven
-            decision-making.
-        </p>
     </section>
 
-    <section>
-        <h2>Core Skills</h2>
-        <ul class="skills">
-            <li>Data Analysis</li>
-            <li>SQL</li>
-            <li>Excel</li>
-            <li>BI Tools</li>
-            <li>Scikit-learn</li>
-            <li>Pandas & NumPy</li>
-            <li>Programming</li>
-            <li>Git & GitHub</li>
-            <li>Web & Tools</li>
-        </ul>
-    </section>
+    <div class="download-wrapper">
+        <a href="{{ url_for('static', filename='Mohammed_Saihan_Resume (1).pdf') }}" class="download-btn" download>
+            Download Resume
+        </a>
 
-    <section>
-        <h2>Selected Projects</h2>
-
-        <div class="project">
-            <h3>Retail Sales & Customer Analytics Dashboard | Power BI, SQL</h3>
+        <!-- PROFESSIONAL SUMMARY -->
+        <section class="resume-section">
+            <h2>Professional Summary</h2>
             <p>
-                Built an interactive Power BI dashboard to analyze retail sales, customer behavior, and performance
-                trends
-
-                Used SQL (joins, CTEs, window functions) to extract, aggregate, and analyze transactional data
-
-                Created KPI metrics including total revenue, average order value (AOV), and month-on-month growth
-
-                Applied customer segmentation and demographic analysis to identify high-value customer groups
-
-                Delivered actionable insights to support product performance evaluation and data-driven decisions
-
+                Results-driven Data Analyst with hands-on experience in data cleaning,
+                transformation, and interactive dashboard development. Skilled in SQL,
+                Excel, Power BI, and Python to convert raw data into actionable business insights.
+                Experienced in building KPI dashboards, analyzing revenue and customer behavior trends,
+                and supporting data-driven decision-making across retail and hospitality domains.
             </p>
-            <p class="tech">
-                Python, Power BI, MySQL
+        </section>
+
+        <!-- CORE SKILLS -->
+        <section class="resume-section">
+            <h2>Core Skills</h2>
+
+            <div class="two-column">
+                <div>
+                    <h3>Analytics & Reporting</h3>
+                    <ul>
+                        <li>Data Cleaning & Transformation</li>
+                        <li>KPI Development & Performance Tracking</li>
+                        <li>Business Reporting & MIS Dashboards</li>
+                        <li>Trend & Revenue Analysis</li>
+                        <li>Customer & Behavioral Analytics</li>
+                        <li>Forecasting & Performance Monitoring</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Technical Stack</h3>
+                    <ul>
+                        <li>SQL (Joins, Aggregations, Subqueries)</li>
+                        <li>Excel (Pivot Tables, Power Query, Advanced Formulas)</li>
+                        <li>Power BI (Data Modeling, DAX, Dashboards)</li>
+                        <li>Python (Pandas, NumPy, Preprocessing)</li>
+                        <li>Data Visualization & Dashboard Design</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>Tools & Platforms</h3>
+            <p class="tools-line">
+                Power BI Service • Git & GitHub • Google Colab • Jupyter Notebook
             </p>
-        </div>
+        </section>
 
-        <div class="project">
-            <h3>Invoice Cross-Checking ML System</h3>
-            <p>
-                Designed a machine learning pipeline to extract, normalize, and
-                cross-validate invoice data using OCR and NLP techniques.
-            </p>
-            <p class="tech">
-                Python, OCR, NLP, Pandas
-            </p>
-        </div>
-    </section>
+        <!-- PROJECT EXPERIENCE -->
+        <section class="resume-section">
+            <h2>Project Experience</h2>
 
-    <section>
-        <h2>PROFESSIONAL TRAINING</h2>
-        <p>
-            Data Analytics & Data Science – Professional Online Programs
-            (SQL, Excel, Power BI, Python, Business Analytics)
-        </p>
-    </section>
+            <!-- Project 1 -->
+            <div class="project-block">
+                <h3>Retail Sales & Customer Analytics Dashboard</h3>
+                <p class="tech-stack">SQL • Power BI • Excel</p>
 
-    <section>
-        <h2>What I Bring</h2>
-        <ul>
-            <li>Strong ability to learn and apply new technologies quickly</li>
-            <li>Project-first mindset with real-world deployment experience</li>
-            <li>Comfortable working with both ML models and backend systems</li>
-            <li>Clear communication and structured problem-solving</li>
-        </ul>
-    </section>
+                <p class="project-links">
+                    <a href="https://github.com/MohammedSaihan/retail-analytics-dashboard" target="_blank">
+                        🔗 GitHub Repository
+                    </a>
+                </p>
 
-    <footer>
-        <p>© 2026 Mohammed Saihan</p>
-    </footer>
+                <ul>
+                    <li>Built SQL queries to calculate KPIs including revenue, AOV, and growth metrics</li>
+                    <li>Designed interactive Power BI dashboards with drill-down capabilities</li>
+                    <li>Analyzed product category contribution and customer segmentation</li>
+                    <li>Identified monthly revenue trends and high-performing customer segments</li>
+                </ul>
+
+                <p class="impact">
+                    <strong>Impact:</strong> Enabled structured KPI monitoring and identified revenue growth
+                    opportunities.
+                </p>
+            </div>
+
+
+            <!-- Project 2 -->
+            <div class="project-block">
+                <h3>Hospitality Analytics – Hotel Occupancy & Revenue (Jeddah)</h3>
+                <p class="tech-stack">SQL • Power BI • Excel</p>
+
+                <p class="project-links">
+                    <a href="https://github.com/MohammedSaihan/hospitality-analytics" target="_blank">
+                        🔗 GitHub Repository
+                    </a>
+                </p>
+
+                <ul>
+                    <li>Calculated ADR, RevPAR, cancellation rate, and average length of stay</li>
+                    <li>Performed monthly booking and revenue trend analysis</li>
+                    <li>Built executive-level dashboard for occupancy and pricing monitoring</li>
+                    <li>Analyzed weekend vs weekday demand patterns</li>
+                </ul>
+
+                <p class="impact">
+                    <strong>Impact:</strong> Identified peak demand periods and pricing optimization opportunities.
+                </p>
+            </div>
+
+
+            <!-- TRAINING -->
+            <section class="resume-section">
+                <h2>Professional Training</h2>
+                <ul>
+                    <li>Data Analytics & Data Science – Professional Online Programs</li>
+                    <li>SQL for Data Analysis</li>
+                    <li>Advanced Excel & Business Reporting</li>
+                    <li>Power BI Dashboard Development</li>
+                    <li>Python for Data Analytics</li>
+                    <li>Business Analytics & KPI Strategy</li>
+                </ul>
+            </section>
+
+            <!-- CERTIFICATIONS -->
+            <section class="resume-section">
+                <h2>Certifications</h2>
+                <ul>
+                    <li>Certified Data Analyst</li>
+                    <li>Certified Data Scientist (Foundational Level)</li>
+                </ul>
+            </section>
+
+            <!-- WHAT I BRING -->
+            <section class="resume-section">
+                <h2>What I Bring</h2>
+                <ul>
+                    <li>Strong analytical mindset with business-oriented thinking</li>
+                    <li>Project-first approach with real dashboard deployment experience</li>
+                    <li>Ability to translate business problems into measurable KPIs</li>
+                    <li>Structured problem-solving and clear communication</li>
+                    <li>Fast learner with adaptability to new tools and technologies</li>
+                </ul>
+            </section>
+
+    </div>
+
     {% endblock %}
